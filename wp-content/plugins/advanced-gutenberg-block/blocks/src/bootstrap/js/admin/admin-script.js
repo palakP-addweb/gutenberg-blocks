@@ -1,0 +1,10 @@
+jQuery(document).ready(function($){
+    $('.awagb-primary-color').wpColorPicker();
+    $('.awagb-secondary-color').wpColorPicker();
+    $('.awagb-link-color').wpColorPicker();
+    $('.awagb-link-hover-color').wpColorPicker();
+    $('.awagb-primary-button-color').wpColorPicker();
+    $('.awagb-primary-button-hover-color').wpColorPicker();
+    $('.awagb-secondary-button-color').wpColorPicker();
+    $('.awagb-secondary-button-hover-color').wpColorPicker();
+});

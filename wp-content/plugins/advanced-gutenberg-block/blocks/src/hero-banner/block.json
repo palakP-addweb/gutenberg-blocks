@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "awagb/hero-banner",
+	"version": "0.1.0",
+	"title": "Hero Banner",
+	"category": "addweb-blocks",
+	"icon": "cover-image",
+	"description": "Example block scaffolded with Create Block tool.",
+	"attributes": {		
+		"title": {
+            "type": "string",
+            "source": "html",
+            "selector": "h2"
+        },
+        "titleColor": {
+            "type": "string",
+            "default": "black"
+        },
+        "body": {
+            "type": "string",
+            "source": "html",
+            "selector": "p"
+        },
+        "alignment": {
+            "type": "string",
+            "default": "none"
+        },
+        "backgroundImage": {
+            "type": "string",
+            "default": null
+        },
+        "overlayColor": {
+            "type": "string",
+            "default": "black"
+        },
+        "overlayOpacity": {
+            "type": "number",
+            "default": 0.3
+        }
+	},
+	"example": {},
+	"textdomain": "hero-banner",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

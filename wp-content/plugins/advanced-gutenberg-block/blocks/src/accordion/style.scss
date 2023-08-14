@@ -1,0 +1,58 @@
+/*
+* Style Works for both Editor and Frontend
+*/
+.wp-block-awagb-accordion-block {
+	overflow: hidden;
+	&.awagb__accordion_disabled {
+		pointer-events: none !important;
+	}
+	a.awagb__accordion_link {
+		display: block;
+		text-decoration: none !important;
+	}
+	.awagb__accordion_head {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		// header icon
+		.awagb__accordion_icon {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+		}
+
+		// header icon position
+		&.awagb_right_icon {
+			// justify-content: space-between;
+			flex-direction: row;
+		}
+		&.awagb_left_icon {
+			// justify-content: flex-end;
+			flex-direction: row-reverse;
+		}
+
+		// heading
+		.awagb__accordion_heading {
+			&.awagb_right_icon {
+				margin-right: 20px;
+				flex: 1;
+			}
+			&.awagb_left_icon {
+				margin-left: 20px;
+				flex: 1;
+			}
+		}
+	}
+
+	.collapse-icon span {
+		display: block;
+	}
+
+	.awagb__accordion_body {
+		display: none;
+		&.awagb__accordion_body--show {
+			display: block;
+		}
+	}
+}
