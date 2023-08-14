@@ -217,7 +217,6 @@ function create_advanced_gutenberg_block_init() {
 
 
 	foreach ( $blocks as $dir => $args ) {
-
 		register_block_type( __DIR__ . '/blocks/build/' . $dir, $args );
 
 	}
